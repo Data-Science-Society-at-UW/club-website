@@ -561,3 +561,16 @@ nav a.active i, nav a:hover i {
     font-size: 1.3em;
     margin-right: 0.5em;
 }
+
+/* Officer profile images */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #7b5fff;
+    display: block;
+    margin: 0 auto 1rem auto;
+    box-shadow: 0 2px 8px 0 rgba(123,95,255,0.10);
+    background: #fff;
+}
