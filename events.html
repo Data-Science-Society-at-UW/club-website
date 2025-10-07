@@ -1,0 +1,140 @@
+<!-- Created by Akshith Saravanan for the Data Science Society at UW -->
+<!-- This page consists of all the information about the events organized 
+by the Data Science Society at UW and also about the upcoming events -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Data Science Society at UW</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- This section contains the organization logo and title -->
+    <header>
+        <div class="headerContent">
+            <a href="index.html"><img src="logo.png" alt="AI Society Logo" class="headerLogo"></a>
+            <div class="headerText">
+                <h1>Data Science Society at UW</h1>
+                <p>Making AI accessible to all.</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <!-- This section contains the main site navigation with icons -->
+        <div class="navContainer">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="officers.html"><i class="fas fa-users"></i> Officers</a>
+            <a href="events.html" class="active"><i class="fas fa-calendar-alt"></i> Events</a>
+            <a href="membership.html"><i class="fas fa-user-plus"></i> Membership</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+        </div>
+    </nav>
+    <!-- This section contains the upcoming events information -->
+    <section class="eventsSection">
+        <div class="eventsContainer">
+            <h2>Upcoming Events</h2>
+            <p>Join us for exciting workshops, company tours, and collaborative projects designed to enhance your data science journey.</p>
+            
+            <!-- Amazon Company Tour Event -->
+            <div class="eventCard">
+                <div class="eventDate">
+                    <span class="month">Nov</span>
+                    <span class="day">15</span>
+                </div>
+                <div class="eventDetails">
+                    <h3>Amazon Company Tour</h3>
+                        <p class="eventTime"><i class="fas fa-clock"></i> TBD</p>
+                    <p class="eventLocation"><i class="fas fa-map-marker-alt"></i> Amazon Seattle Headquarters</p>
+                    <p class="eventDescription">Visit Amazon's Seattle headquarters to learn about data science and machine learning applications in real-world scenarios. Meet professionals, ask questions about data careers, and explore their innovative data infrastructure.</p>
+                </div>
+            </div>
+
+            <!-- Contract Project Event -->
+            <div class="eventCard">
+                <div class="eventDate">
+                    <span class="month">Dec</span>
+                    <span class="day">01</span>
+                </div>
+                <div class="eventDetails">
+                    <h3>Contract Project with Coffee Chain</h3>
+                    <p class="eventTime"><i class="fas fa-clock"></i> TBD</p>
+                    <p class="eventLocation"><i class="fas fa-map-marker-alt"></i> UW Campus</p>
+                    <p class="eventDescription">Partner with a local coffee chain to analyze store data and identify profitable locations. Gain hands-on experience with real business data through this selective project. Applications and interviews required.</p>
+                </div>
+            </div>
+
+            <!-- Data Science Hackathon Event -->
+            <div class="eventCard">
+                <div class="eventDate">
+                    <span class="month">Dec</span>
+                    <span class="day">15</span>
+                </div>
+                <div class="eventDetails">
+                    <h3>Data Science Hackathon</h3>
+                        <p class="eventTime"><i class="fas fa-clock"></i> TBD</p>
+                    <p class="eventLocation"><i class="fas fa-map-marker-alt"></i> HUB 250</p>
+                    <p class="eventDescription">Join our hackathon where teams will use data to solve problems in business, science, or social impact. Build projects, collaborate under time constraints, and showcase your data science skills!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- This section contains the past events information -->
+    <section class="eventsSection pastEvents">
+        <div class="eventsContainer">
+            <h2>Past Events</h2>
+            <p>Check out the amazing events we've hosted and the impact we've made in our community.</p>
+            
+            <!-- DSML Intern Workshop Past Event -->
+            <div class="eventCard past">
+                <div class="eventDate past">
+                    <span class="month">Sep</span>
+                    <span class="day">28</span>
+                </div>
+                <div class="eventDetails">
+                    <h3>Data Science and Machine Learning Internship Workshop</h3>
+                    <p class="eventTime"><i class="fas fa-clock"></i> TBD</p>
+                    <p class="eventLocation"><i class="fas fa-map-marker-alt"></i> Zoom (Online)</p>
+                    <p class="eventDescription">Successfully hosted our comprehensive DSML Intern Workshop featuring Zirui (Mary) Guo, Data Scientist at TikTok! The workshop covered key topics including: What is DSML?, Why DSML?, Understanding internships, How to get internships, Resume/Cover Letter tips, Interview preparation, Networking strategies, and Q&A sessions.</p>
+                    <button class="readMoreBtn" onclick="toggleDetails(this)">Click to see more details</button>
+                    <div class="eventDetailsExpanded" style="display: none;">
+                        <h4>Workshop Agenda:</h4>
+                        <ul>
+                            <li><strong>What is DSML?</strong> - Introduction to Data Science and Machine Learning</li>
+                            <li><strong>Why DSML?</strong> - Career opportunities and industry trends</li>
+                            <li><strong>What is an internship?</strong> - Understanding internship roles and expectations</li>
+                            <li><strong>How to get an internship?</strong> - Application strategies and best practices</li>
+                            <li><strong>Resume/Cover Letter</strong> - Crafting compelling applications</li>
+                            <li><strong>Interview Prep</strong> - Technical and behavioral interview tips</li>
+                            <li><strong>Networking</strong> - Building professional connections</li>
+                            <li><strong>Q&A</strong> - Interactive session with industry expert</li>
+                        </ul>
+                        <p><strong>Key Takeaways:</strong> Participants gained valuable insights into DSML internship experiences, learned practical strategies for landing internships, and had the opportunity to network with a Data Scientist from TikTok. The workshop included interactive sessions and feedback collection through surveys.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- This section contains the copyright and organization info -->
+        <p>&copy; 2024 Data Science Society at UW</p>
+    </footer>
+
+    <!-- JavaScript for toggling event details -->
+    <script>
+        function toggleDetails(button) {
+            const expandedDetails = button.nextElementSibling;
+            if (expandedDetails.style.display === 'none') {
+                expandedDetails.style.display = 'block';
+                button.textContent = 'Click to hide details';
+            } else {
+                expandedDetails.style.display = 'none';
+                button.textContent = 'Click to see more details';
+            }
+        }
+    </script>
+</body>
+</html>
