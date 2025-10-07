@@ -676,7 +676,7 @@ nav a.active i, nav a:hover i {
 }
 
 .pastEvents {
-    background: rgba(248,249,250,0.92);
+    background: transparent;
 }
 
 .pastEvents .eventCard {
@@ -735,7 +735,7 @@ nav a.active i, nav a:hover i {
 }
 
 .contactContainer {
-    background: #ffffff;
+    background: transparent;
     border-radius: 16px;
     padding: 3rem;
 }
