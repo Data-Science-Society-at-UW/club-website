@@ -979,6 +979,49 @@ nav a.active i, nav a:hover i {
     color: #7b5fff;
 }
 
+/* Join Section Styling */
+.joinSection {
+    background: linear-gradient(135deg, #7b5fff, #a084e8);
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+}
+
+.joinSection h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.joinSection p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.joinSection .joinBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    color: #7b5fff;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.joinSection .joinBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    color: #7b5fff;
+}
+
 .profileImg {
     width: 100px;
     height: 100px;
