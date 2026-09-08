@@ -11,12 +11,19 @@ Science Society at UW -->
     <title>Officers | Data Science Society at UW</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="description" content="Meet the officer team leading the Data Science Society at UW — our president, vice president, events coordinator, and technical director.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Officers | Data Science Society at UW">
+    <meta property="og:description" content="Meet the officer team leading the Data Science Society at UW.">
+    <meta property="og:image" content="https://data-science-society-at-uw.github.io/club-website/logo.png">
+    <meta property="og:url" content="https://data-science-society-at-uw.github.io/club-website/officers.html">
 </head>
 <body>
     <!-- This section contains the organization logo and title -->
     <header>
         <div class="headerContent">
-            <a href="index.html"><img src="logo.png" alt="AI Society Logo" class="headerLogo"></a>
+            <a href="index.html"><img src="logo.png" alt="Data Science Society at UW Logo" class="headerLogo"></a>
             <div class="headerText">
                 <h1>Data Science Society at UW</h1>
                 <p>Data. Science. Impact.</p>
@@ -26,16 +33,24 @@ Science Society at UW -->
     <nav>
         <!-- This section contains the main site navigation with icons -->
         <div class="navContainer">
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
-            <a href="officers.html" class="active"><i class="fas fa-users"></i> Officers</a>
-            <a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a>
-            <a href="membership.html"><i class="fas fa-user-plus"></i> Membership</a>
-            <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+            <input type="checkbox" id="navToggle" class="navToggle" aria-label="Toggle navigation menu">
+            <label for="navToggle" class="navHamburger"><i class="fas fa-bars"></i> Menu</label>
+            <div class="navLinks">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="officers.html" class="active"><i class="fas fa-users"></i> Officers</a>
+                <a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a>
+                <a href="membership.html"><i class="fas fa-user-plus"></i> Membership</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+            </div>
         </div>
     </nav>
     
 <!-- Officers Section -->
 <section id="officers">
+    <div class="officersIntro">
+        <h2>Meet Our Officers</h2>
+        <p>Our officer team leads the Data Science Society at UW, organizing events, mentoring members, and building a welcoming community for students passionate about data science.</p>
+    </div>
     <div class="teamList">
         <!-- President -->
         <div class="teamMember">
