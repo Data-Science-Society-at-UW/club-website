@@ -15,7 +15,7 @@ function EventItem({ event }: { event: Event }) {
         <h3>{event.title}{event.year && <span> ({event.year})</span>}</h3>
         <div className="event-meta"><span><Icon name="clock" size={15} />{event.time}</span><span><Icon name="map-pin" size={15} />{event.location}</span></div>
         <p>{event.description}</p>
-        {event.details && <EventDetailsDisclosure details={event.details} />}
+        {(event.details || event.instagram) && <EventDetailsDisclosure details={event.details} instagram={event.instagram} />}
       </div>
     </article>
   );

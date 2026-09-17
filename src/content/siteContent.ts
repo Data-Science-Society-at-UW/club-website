@@ -25,6 +25,11 @@ export type EventDetail = {
   bullets?: string[];
 };
 
+export type EventInstagram = {
+  url: string;
+  label: string;
+};
+
 export type Event = {
   month: string;
   day: string;
@@ -35,6 +40,7 @@ export type Event = {
   description: string;
   upcoming?: boolean;
   details?: EventDetail[];
+  instagram?: EventInstagram;
 };
 
 export type MembershipSection = {
@@ -119,36 +125,43 @@ export const events: Event[] = [
   {
     month: 'May', day: '16', title: 'EverybodyHacks', year: '2026', time: '9:00 AM - 6:00 PM', location: 'Maple Great Room',
     description: 'A beginner-friendly, one-day hackathon hosted by GEODAT, Data Science Society, iQueeries, and Notion @ UW.',
+    instagram: { url: 'https://www.instagram.com/p/DXzt5mHkiAj/?img_index=1', label: 'View Information Post' },
     details: [{ heading: 'Hackathon Tracks', bullets: ['Food Waste & Efficiency (DSS): Challenged participants to reduce food waste in a café environment using real-world Woods Coffee sales, inventory, and waste data.', 'Inclusivity in Technology (iQueeries): Explored accessibility, representation, and reducing bias to design empowering technology for underserved communities.', 'Disaster Response & Resilience (Notion @ UW): Focused on using data and technology to help communities prepare for and recover from physical disasters and system-level crises.'] }],
   },
   {
     month: 'Apr', day: '30', title: 'OpenAI x Handshake Codex Creator Challenge', year: '2026', time: 'Submissions Closed', location: 'Online',
     description: 'An opportunity for all UW students to build an AI-powered project and claim $100 in free Codex credits.',
+    instagram: { url: 'https://www.instagram.com/p/DW5oO4XAm7O/', label: 'View Information Post' },
     details: [{ heading: 'Challenge Details', paragraphs: ['Participants had the chance to win up to a year of ChatGPT Plus and $10,000 in API credits. Open to students across all majors with no prior coding experience required, with submissions showcased to over 1 million employers on Handshake.'] }],
   },
   {
     month: 'Mar', day: '12', title: 'DSS End of Quarter Social', year: '2026', time: 'Evening', location: 'UW HUB Bowling Alley / Games Area',
     description: 'Members wrapped up the quarter with a fun night of bowling and community.',
+    instagram: { url: 'https://www.instagram.com/p/DV4k0ZlAa09/', label: 'View Information Post' },
     details: [{ heading: 'Event Details', paragraphs: ['This social was completely free for DSS members! A huge thank you to our External Client Project team, whose consulting project with Woods Coffee helped support this event.'] }],
   },
   {
     month: 'Feb', day: '26', title: 'Guest Speaker: Rachel Wagner-Kaiser, Ph.D.', year: '2026', time: '5:30 PM - 6:30 PM', location: 'MOR 220',
     description: 'A session on Natural Language Processing with KPMG data scientist and NLP & AI Data Science Leader, Rachel Wagner-Kaiser, Ph.D.',
+    instagram: { url: 'https://www.instagram.com/p/DVAsMGbjhft/', label: 'View Information Post' },
     details: [{ heading: 'Presentation Topics', bullets: ['The history of NLP and end-to-end NLP systems', 'Messy realities of data curation, data cleaning, and labeling', 'Multilingual/non-English NLP challenges', 'Day-to-day tasks of a data scientist'] }],
   },
   {
     month: 'Feb', day: '12', title: 'Root Insurance Workshop', year: '2026', time: '5:30 PM - 6:30 PM', location: 'Savery Hall, Room 264',
     description: 'An exclusive workshop on how analytics, predictive modeling, and causal inference are reshaping the auto insurance industry.',
+    instagram: { url: 'https://www.instagram.com/p/DU_vNumkgCC/?img_index=1', label: 'View Recap Post' },
     details: [{ heading: 'Speaker Details & Agenda', paragraphs: ["Joined by Sam Affolter (Director of Decision Science) and Elliot Layden (Sr. DS Manager), we discussed tackling rare events and high-volume decisions at scale. The session included insights into Root's mission, machine learning use cases in production, and current openings for summer internships and entry-level roles."] }],
   },
   {
     month: 'Jan', day: '29', title: 'First Meeting of Winter Quarter', year: '2026', time: '5:30 PM - 6:30 PM', location: 'Gould Hall, GLD 322',
     description: 'Our kickoff meeting covering our history, vision, and upcoming quarter logistics.',
+    instagram: { url: 'https://www.instagram.com/p/DUmudD_EUEI/', label: 'View Recap Post' },
     details: [{ heading: 'What We Covered', bullets: ['Our history, vision, leadership, and officer team', 'Logistics: Slack, RSO page, and attendance'] }, { heading: 'Winter Quarter Projects', bullets: ['Woods Coffee Consulting Project', 'DSML Reading Group', 'Student Research Project'] }],
   },
   {
     month: 'May', day: '29', title: 'Machine Learning & Data Science Internship Workshop', year: '2025', time: '6:30 PM - 8:30 PM', location: 'PAB B109, UW Seattle',
     description: 'Successfully hosted our comprehensive Machine Learning & Data Science Internship Workshop featuring industry professionals! The workshop included a crash course on ML fundamentals, a panel discussion with data science professionals, and networking sessions with resume reviews. Participants gained valuable insights into data science careers and internship opportunities.',
+    instagram: { url: 'https://www.instagram.com/p/DO_lf0bCX7M/', label: 'View Recap Post' },
     details: [{ heading: 'Workshop Agenda:', bullets: ['What is DSML? - Introduction to Data Science and Machine Learning', 'Why DSML? - Career opportunities and industry trends', 'What is an internship? - Understanding internship roles and expectations', 'How to get an internship? - Application strategies and best practices', 'Resume/Cover Letter - Crafting compelling applications', 'Interview Prep - Technical and behavioral interview tips', 'Networking - Building professional connections', 'Q&A - Interactive session with industry expert'] }, { paragraphs: ['Key Takeaways: Participants gained valuable insights into DSML internship experiences, learned practical strategies for landing internships, and had the opportunity to network with a Data Scientist from TikTok. The workshop included interactive sessions and feedback collection through surveys.'] }],
   },
 ];

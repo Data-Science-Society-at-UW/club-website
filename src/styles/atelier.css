@@ -759,6 +759,35 @@
   margin-top: 1.2rem;
 }
 
+.event-disclosure-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.event-instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid transparent;
+  color: var(--amethyst);
+  background: transparent;
+  text-decoration: none;
+  font-size: 0.65rem;
+  font-weight: 700;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.event-instagram-link:hover {
+  border-bottom-color: var(--amethyst-soft);
+}
+
+.events-upcoming-section .event-instagram-link {
+  color: var(--gold);
+}
+
 .event-disclosure-button {
   display: inline-flex;
   align-items: center;
