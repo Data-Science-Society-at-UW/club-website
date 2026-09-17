@@ -1,0 +1,19 @@
+:root {
+  --ink: #17131c;
+  --plum: #241827;
+  --amethyst: #5c3876;
+  --amethyst-soft: #8d66ad;
+  --gold: #d6b477;
+  --gold-bright: #efd39a;
+  --ivory: #f3ede7;
+  --ink-paper: #241c2b;
+  --muted: #766f78;
+  --muted-light: rgba(243, 237, 231, 0.66);
+  --line-light: rgba(36, 28, 43, 0.18);
+  --line-dark: rgba(243, 237, 231, 0.18);
+  --shadow-deep: 0 28px 80px rgba(15, 8, 22, 0.2);
+  --ease-out: cubic-bezier(0.2, 0.75, 0.2, 1);
+  --content-width: 1400px;
+  --gutter: clamp(1.25rem, 5vw, 7.5rem);
+  --section-space: clamp(4rem, 9vw, 9rem);
+}

@@ -9,3 +9,7 @@
 
 # Logs
 *.log
+
+# Node / Vite build output
+node_modules/
+dist/
