@@ -22,7 +22,7 @@ export function MembershipPage() {
           </div>
           <section className="membership-cta" data-atelier-reveal>
             <div><h2>{membershipPageContent.ctaTitle}</h2><p>{membershipPageContent.ctaText}</p></div>
-            <a className="button button-dark" href={membershipPageContent.ctaHref} target="_blank" rel="noreferrer">{membershipPageContent.ctaLabel} <Icon name="arrow-up-right" size={16} /></a>
+            <span className="button button-dark button-soon" aria-disabled="true">{membershipPageContent.ctaLabel} <Icon name="clock" size={16} /></span>
           </section>
         </div>
       </section>

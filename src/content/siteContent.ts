@@ -170,22 +170,20 @@ export const membershipPageContent = {
   title: 'Join Our Community',
   intro: 'We welcome all UW students, regardless of discipline or experience level, to join the Data Science Society at UW. Members gain access to exclusive events, workshops, and a network of data science enthusiasts.',
   sections: [
-    { title: 'How to Join', icon: 'user-plus', paragraph: 'Becoming a member is easy! Join via Huskylink (link below) or attend one of our events to learn more.', bullets: ['Join via Huskylink (link below)', 'Attend our events and meetings', 'Connect with our community'] },
     { title: 'Member Benefits', icon: 'star', paragraph: "As a member, you'll enjoy exclusive access to our resources and community.", bullets: ['Priority access to data science workshops and seminars', 'Networking opportunities with industry professionals', 'Participation in data science projects and research', 'Access to exclusive member-only events', 'Mentorship opportunities', 'Career development resources'] },
     { title: 'Our Community', icon: 'users', paragraph: 'Join a diverse community of students passionate about data science and AI.', bullets: ['Connect with like-minded peers', 'Collaborate on exciting projects', 'Learn from experienced members', 'Build lasting professional relationships'] },
   ] satisfies MembershipSection[],
   ctaTitle: 'Ready to Join?',
-  ctaText: "Don't miss out on the opportunity to be part of our vibrant data science community. Join us today and start your journey in AI and data science!",
-  ctaLabel: 'Join on Huskylink',
-  ctaHref: 'https://huskylink.washington.edu/organization/datasciencesociety',
+  ctaText: 'Our club application opens the first week of every quarter. The application form will be available here soon — check back then to apply!',
+  ctaLabel: 'Application form opening soon',
 };
 
 export const contactPageContent = {
   title: 'Contact Us',
   intro: 'If you have any questions, suggestions, or would like to collaborate with the Data Science Society at UW, feel free to reach out!',
   links: [
-    { title: 'Email Us', description: 'Get in touch with us directly', label: 'datasciencesociety@uw.edu', href: 'mailto:datasciencesociety@uw.edu', icon: 'mail' },
-    { title: 'Follow Us', description: 'Stay updated with our latest events', label: '@data_science_society_uw', href: 'https://www.instagram.com/data_science_society_uw/', icon: 'instagram' },
-    { title: 'Connect', description: 'Network with our community', label: 'Data Science Society at UW', href: 'https://www.linkedin.com/company/data-science-society-uw/', icon: 'linkedin' },
+    { title: 'Email', description: 'Get in touch with us directly', label: 'datasciencesociety@uw.edu', href: 'mailto:datasciencesociety@uw.edu', icon: 'mail' },
+    { title: 'Instagram', description: 'Stay updated with our latest events', label: '@data_science_society_uw', href: 'https://www.instagram.com/data_science_society_uw/', icon: 'instagram' },
+    { title: 'LinkedIn', description: 'Network with our community', label: 'Data Science Society at UW', href: 'https://www.linkedin.com/company/data-science-society-uw/', icon: 'linkedin' },
   ] satisfies ContactLink[],
 };
