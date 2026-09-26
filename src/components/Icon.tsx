@@ -3,6 +3,8 @@ import {
   CalendarDays,
   ChevronDown,
   Clock3,
+  Github,
+  Globe,
   Home,
   Instagram,
   Linkedin,
@@ -26,6 +28,8 @@ type IconName =
   | 'mail'
   | 'instagram'
   | 'linkedin'
+  | 'website'
+  | 'github'
   | 'clock'
   | 'map-pin'
   | 'menu'
@@ -49,6 +53,8 @@ const icons = {
   mail: Mail,
   instagram: Instagram,
   linkedin: Linkedin,
+  website: Globe,
+  github: Github,
   clock: Clock3,
   'map-pin': MapPin,
   menu: Menu,

@@ -138,7 +138,7 @@
   width: min(var(--content-width), calc(100% - (var(--gutter) * 2)));
   min-height: min(850px, calc(100svh - 82px));
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.92fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   gap: clamp(2rem, 6vw, 8rem);
   margin: 0 auto;
@@ -580,10 +580,65 @@
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  align-items: center;
+  min-height: 1.5rem;
   margin-top: 1.9rem;
   padding-top: 0.8rem;
   color: var(--gold);
   border-top: 1px solid var(--line-light);
+}
+
+.officer-line-mark {
+  display: inline-flex;
+  color: var(--gold);
+}
+
+.officer-connect {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--amethyst);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: color 0.3s ease, gap 0.3s var(--ease-out);
+}
+
+.officer-connect:hover {
+  color: var(--gold);
+  gap: 0.78rem;
+}
+
+.officer-connect span {
+  line-height: 1;
+}
+
+.officer-portrait-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 1rem;
+  text-align: center;
+  background: linear-gradient(150deg, var(--amethyst), var(--plum));
+  color: var(--ivory);
+}
+
+.officer-portrait-initials {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(3.5rem, 7vw, 5rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.officer-portrait-note {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.82;
 }
 
 .events-upcoming-section {
@@ -1116,7 +1171,7 @@
 @media (max-width: 980px) {
   .desktop-nav { display: none; }
   .mobile-menu-trigger { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.6rem 0; border: 0; color: var(--ivory); background: transparent; cursor: pointer; font-size: 0.79rem; font-weight: 700; }
-  .home-hero-inner { grid-template-columns: 1fr 0.8fr; gap: 2rem; }
+  .home-hero-inner { grid-template-columns: 1fr; gap: 2rem; }
   .committee-row { grid-template-columns: 8% minmax(145px, 0.8fr) 1fr 20px; }
   .membership-sections { grid-template-columns: 1fr 1fr; }
   .membership-section:last-child { grid-column: 1 / -1; min-height: 310px; }

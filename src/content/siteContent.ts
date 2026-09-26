@@ -12,11 +12,18 @@ export type Committee = {
   icon: 'chalkboard' | 'mentorship' | 'projects' | 'community';
 };
 
+export type OfficerLink = {
+  url: string;
+  label: string;
+  icon: 'linkedin' | 'website' | 'github' | 'mail';
+};
+
 export type Officer = {
   name: string;
   role: string;
-  image: string;
+  image?: string;
   paragraphs: string[];
+  link?: OfficerLink;
 };
 
 export type EventDetail = {
@@ -88,25 +95,34 @@ export const officers: Officer[] = [
     name: 'Chester Li',
     role: 'President',
     image: 'img1.jpg',
-    paragraphs: ["I'm a dual Ph.D. student in Astrophysics and Astrobiology at UW, applying machine learning to explore cosmic mysteries. With expertise in time-series analysis and neural networks, I'm passionate about pushing the boundaries of astrophysics and data science."],
+    paragraphs: ["Hi! I'm Chester, a Ph.D. candidate studying astrophysics, astrobiology and statistics at UW. I'm especially interested in statistical modeling, machine learning, and using quantitative methods to analyze large astronomical datasets. I co-founded the Data Science Society to build an interdisciplinary community where students from different backgrounds can learn from one another and collaborate on data-driven projects. Outside of school, I enjoy hiking, traveling, and scuba diving."],
+    link: { url: 'https://zhuofuli.github.io/', label: 'Website', icon: 'website' },
   },
   {
     name: 'Wenhao Pan',
     role: 'Vice President',
     image: 'img2.jpg',
-    paragraphs: ["I'm a Ph.D. student in Statistics focusing on machine learning and optimization. I enjoy working out, playing basketball and badminton, and exploring video games.", 'Outside of academics, I love connecting ideas and people. Feel free to learn more about me by searching my website online.'],
-  },
-  {
-    name: 'Kimberly Gu',
-    role: 'Events Coordinator',
-    image: 'img3.jpg',
-    paragraphs: ['I\'m a sophomore at UW planning to major in Informatics. As a founder of a media team, I use the internet to amplify underrepresented voices. I’m also passionate about protecting stray animals and have dedicated myself to related charitable work back in China.'],
+    paragraphs: ["Hello! I'm Wenhao, a Statistics PhD student interested in the theory and application of machine learning. In the past, I've done multiple machine learning internships at Amazon and Pinterest about time series forecasting and search algorithms. Feel free to ask me anything about research, graduate school, and internships!"],
+    link: { url: 'https://www.linkedin.com/in/wenhao-pan-uw/', label: 'LinkedIn', icon: 'linkedin' },
   },
   {
     name: 'Akshith Saravanan',
-    role: 'Technical Director & Secretary',
+    role: 'Technical Affairs Lead',
     image: 'img4.jpeg',
-    paragraphs: ["I'm a Computer Science undergraduate at UW Seattle who loves using technology to solve real-world challenges. My focus areas include AI/ML, software engineering, and full-stack web development. I enjoy turning ideas into impactful solutions and collaborating with diverse teams to make a difference."],
+    paragraphs: ["Hi! I'm Akshith, a junior majoring in Computer Science and minoring in Data Science. I'm especially interested in the intersection of AI and cybersecurity, where I also have research experience. I joined the Data Science Society because I love teaching and helping others pursue their interests in data science. I'm excited to work with students and create an impact through data science. Outside of school, I enjoy bowling, hiking, driving, and going to the gym."],
+    link: { url: 'https://www.linkedin.com/in/akshithsaravanan/', label: 'LinkedIn', icon: 'linkedin' },
+  },
+  {
+    name: 'Kimberly Gu',
+    role: 'Data Analytics and Research Lead',
+    image: 'img3.jpg',
+    paragraphs: ["Hi! I'm Kimberly, a junior pursuing a double degree in Informatics and Geography, with a minor in Dance. I'm especially interested in using data science for health and social impact. After serving as Social Media Lead, I'm excited to lead the Research Team and help members take their projects from proposal to presentation."],
+    link: { url: 'https://www.linkedin.com/in/gu-kimberly-2b5a80341', label: 'LinkedIn', icon: 'linkedin' },
+  },
+  {
+    name: 'Ellis',
+    role: 'Social Media Lead',
+    paragraphs: ["Hey, I'm Ellis. I'm a sophomore studying statistics. I'm interested in making statistics and data science more accessible. I joined DSS because I wanted to help create an awesome community of data enthusiasts. I am excited to boost engagement for our club as media lead! Outside of school, I enjoy running and being in nature."],
   },
 ];
 

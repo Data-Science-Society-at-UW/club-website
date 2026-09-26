@@ -1,9 +1,6 @@
-import { lazy, Suspense } from 'react';
 import { Icon } from '../components/Icon';
 import { CommitteeRow } from '../components/pages/CommitteeRow';
 import { homeContent } from '../content/siteContent';
-
-const AmethystHeroScene = lazy(() => import('../components/visuals/AmethystHeroScene').then(({ AmethystHeroScene: Scene }) => ({ default: Scene })));
 
 export function HomePage() {
   return (
@@ -18,7 +15,6 @@ export function HomePage() {
               <a className="text-action text-action-light" href="contact.html">Contact Us <Icon name="arrow-up-right" size={16} /></a>
             </div>
           </div>
-          <Suspense fallback={<div className="amethyst-scene" aria-hidden="true"><div className="amethyst-scene-fallback" /></div>}><AmethystHeroScene /></Suspense>
         </div>
         <div className="hero-scroll-cue" aria-hidden="true"><span />Scroll</div>
       </section>
