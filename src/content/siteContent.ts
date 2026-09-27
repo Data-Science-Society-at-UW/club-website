@@ -122,6 +122,7 @@ export const officers: Officer[] = [
   {
     name: 'Ellis',
     role: 'Social Media Lead',
+    image: 'img5.jpg',
     paragraphs: ["Hey, I'm Ellis. I'm a sophomore studying statistics. I'm interested in making statistics and data science more accessible. I joined DSS because I wanted to help create an awesome community of data enthusiasts. I am excited to boost engagement for our club as media lead! Outside of school, I enjoy running and being in nature."],
   },
 ];

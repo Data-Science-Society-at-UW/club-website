@@ -148,12 +148,14 @@
 .home-hero-copy {
   position: relative;
   z-index: 2;
-  width: min(640px, 100%);
+  width: min(760px, 100%);
+  margin: 0 auto;
+  text-align: center;
 }
 
 .home-hero-copy h1 {
-  max-width: 650px;
-  margin: 0 0 2rem;
+  max-width: 720px;
+  margin: 0 auto 2rem;
   color: var(--ivory);
   font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(3.2rem, 7.2vw, 7.25rem);
@@ -163,8 +165,8 @@
 }
 
 .home-hero-copy p {
-  width: min(480px, 100%);
-  margin: 0;
+  width: min(540px, 100%);
+  margin: 0 auto;
   color: var(--muted-light);
   font-size: clamp(0.82rem, 1.1vw, 0.98rem);
   line-height: 1.8;
@@ -173,6 +175,7 @@
 .hero-actions {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.45rem;
   margin-top: 2.45rem;
@@ -1184,8 +1187,9 @@
   .site-brand-copy strong { font-size: 0.77rem; }
   .home-hero, .home-hero-inner { min-height: 720px; }
   .home-hero-inner { display: block; padding-top: 5.4rem; }
-  .home-hero-copy h1 { max-width: 500px; font-size: clamp(3.45rem, 16vw, 6rem); }
-  .home-hero-copy p { max-width: 410px; font-size: 0.93rem; }
+  .home-hero-copy { text-align: left; }
+  .home-hero-copy h1 { max-width: 500px; margin-left: 0; font-size: clamp(3.45rem, 16vw, 6rem); }
+  .home-hero-copy p { max-width: 410px; margin-left: 0; font-size: 0.93rem; }
   .amethyst-scene { position: absolute; right: -31%; bottom: -5%; width: 92vw; opacity: 0.68; pointer-events: none; }
   .hero-scroll-cue { right: var(--gutter); bottom: 1.5rem; }
   .section-heading-row { align-items: center; }
