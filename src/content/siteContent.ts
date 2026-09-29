@@ -113,6 +113,13 @@ export const officers: Officer[] = [
     link: { url: 'https://www.linkedin.com/in/akshithsaravanan/', label: 'LinkedIn', icon: 'linkedin' },
   },
   {
+    name: 'Sumedha Komawar',
+    role: 'Internal Affairs Lead',
+    image: 'img6.jpg',
+    paragraphs: ["Hello! I'm Sumedha, an Economics: Data Science student at the University of Washington interested in data science, AI, and using technology to solve real-world problems. I've worked in data science and AI strategy, including as a Data Scientist Intern at Corpay, where I worked on AI automation and machine learning projects. Feel free to ask me anything about data science, AI, internships, or student life!"],
+    link: { url: 'https://www.linkedin.com/in/sumedha-komawar/', label: 'LinkedIn', icon: 'linkedin' },
+  },
+  {
     name: 'Kimberly Gu',
     role: 'Data Analytics and Research Lead',
     image: 'img3.jpg',
