@@ -132,6 +132,13 @@ export const officers: Officer[] = [
     image: 'img5.jpg',
     paragraphs: ["Hey, I'm Ellis. I'm a sophomore studying statistics. I'm interested in making statistics and data science more accessible. I joined DSS because I wanted to help create an awesome community of data enthusiasts. I am excited to boost engagement for our club as media lead! Outside of school, I enjoy running and being in nature."],
   },
+  {
+    name: 'Aarav Gupta',
+    role: 'Outreach Lead',
+    image: 'img7.jpg',
+    paragraphs: ["Hi! I'm Aarav, a Sophomore studying Electrical and Computer Engineering. I'm especially interested in data engineering and data science to make more efficient data solutions. I joined the Data Science Society because I wanted to be around other people as excited about data science as I am. I hope to connect with passionate students, grow our community, and bring in some really interesting speakers! Outside of school, I enjoy playing basketball, swimming, and going to the gym."],
+    link: { url: 'https://www.linkedin.com/in/aarav-gupta-016055310/', label: 'LinkedIn', icon: 'linkedin' },
+  },
 ];
 
 export const eventsPageContent = {

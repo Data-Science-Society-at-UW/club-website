@@ -5,6 +5,7 @@ import officerThree from '../../img3.jpg';
 import officerFour from '../../img4.jpeg';
 import officerFive from '../../img5.jpg';
 import officerSix from '../../img6.jpg';
+import officerSeven from '../../img7.jpg';
 
 const assets: Record<string, string> = {
   'logo.png': logo,
@@ -14,6 +15,7 @@ const assets: Record<string, string> = {
   'img4.jpeg': officerFour,
   'img5.jpg': officerFive,
   'img6.jpg': officerSix,
+  'img7.jpg': officerSeven,
 };
 
 export function assetPath(fileName: string): string {
